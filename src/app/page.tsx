@@ -3,16 +3,17 @@ import BlogCard from "@/app/components/BlogCard";
 import { client } from "../sanity/lib/client";
 
 export const revalidate = 60; //seconds
+ 
 
 export default async function Home() {
-  const query = `*[_type=='post'] | order(_createdAt asc){
+ const query = `*[_type=='post'] | order(_createdAt asc){
   
     summary,title,image,
       "slug":slug.current
   }`;
 
   const posts:Post[] = await client.fetch(query)
-  // console.log(posts)
+   console.log(posts)
 
   return (
     <main className="flex min-h-screen flex-col ">

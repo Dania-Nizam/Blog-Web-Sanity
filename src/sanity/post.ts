@@ -21,7 +21,7 @@ export const post = defineType({
       title: "Slug",
       options: {
         source: "title",
-        maxLength: 1000,
+        maxLength: 96,
       },
       validation: (Rule) => Rule.required(),
     }),
