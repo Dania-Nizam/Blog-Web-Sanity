@@ -52,7 +52,7 @@ export default async function blog({params:{slug}}:{params:{slug:string}}) {
 
       {/* Blog Summary Section */}
       <section>
-      <h2 className="text-lg sm:text-2xl md:text-3xl font-bold uppercase text-balance">
+      <h2 className="text-lg sm:text-2xl md:text-3xl font-bold uppercase font-sans text-balance">
         Summary
       </h2>
       <p className="text-base  sm:text-lg md:text-xl leading-relaxed text-justify text-dark/80 dark:text-light/80">
@@ -78,7 +78,7 @@ export default async function blog({params:{slug}}:{params:{slug:string}}) {
       </section>
 
       {/* Main Body of Blog */}
-      <section className=" prose prose-lg dark:prose-invert mt-6 prose-h4:text-xl prose-h4:font-bold  text-lg leading-normal text-dark/80 dark:text-light/80
+      <section className=" prose prose-lg dark:prose-invert mt-6 prose-h4:text-xl prose-h4:font-bold font-sans text-xl leading-normal text-dark/80 dark:text-light/80
     text-balance 
       prose-li:list-disc prose-li:list-inside dark:prose-li:marker:text-white
       prose-strong:text-black dark:prose-strong:text-white

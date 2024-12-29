@@ -23,8 +23,8 @@ export default function Footer() {
         </div>
 
         <div>
-          <p className="text-xs text-light">
-            © 2024 <span className="text-light font-bold">&nbsp;D</span>
+          <p className="text-xs text-dark dark:text-light">
+            © 2024 <span className="dark:text-light text-dark font-bold">&nbsp;D</span>
             <span className="text-accentDarkPrimary font-bold">
               N&nbsp;
             </span>{" "}
